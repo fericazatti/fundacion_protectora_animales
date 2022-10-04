@@ -11,6 +11,7 @@
 <body>
     <section>
         <h1>{{$mensaje->nombre}}</h1>
+        <h2>Contacto: <b>{{$mensaje->mail}}</b></h2>
         <p>{{$mensaje->texto}}</p>
         <a class="btn btn-success" href="{{route('mensajes.index')}}">Volver</a>
     </section>

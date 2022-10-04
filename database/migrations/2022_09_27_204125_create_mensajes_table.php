@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nombre','128');
+            $table->string('mail', '50');
             $table->text('texto');            
         });
     }

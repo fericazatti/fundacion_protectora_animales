@@ -15,9 +15,11 @@ class MensajeFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition()
-    {
+    {    
         return [
-            //
-        ];
+            'nombre' => fake() -> name(),
+            'mail' => fake() -> email(),
+            'texto' => fake()->realText(rand(50, 100))
+        ];    
     }
 }
