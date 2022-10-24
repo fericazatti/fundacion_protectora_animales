@@ -1,6 +1,10 @@
 @extends('template/base')
 @section('contenido')  
 
+<section>   
+    <img src="{{asset('resources/image/portada.jpg')}}" width="250">
+</section>
+
 <form action="{{route('mensajes.store')}}" method="POST" class="form form-mensajes">
     
     @csrf
