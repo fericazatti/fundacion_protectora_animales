@@ -14,6 +14,9 @@
         <h2>Contacto: <b>{{$mensaje->mail}}</b></h2>
         <p>{{$mensaje->texto}}</p>
         <a class="btn btn-success" href="{{route('mensajes.index')}}">Volver</a>
+        {{-- <form action="{{route('difusion/enviarSaludo/'.urlencode($mensaje->nombre).'/'.($mensaje->mail))}}" method="get">
+            <button class="btn btn-info" type="submit">Enviarmail</button>
+        </form>         --}}
     </section>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\difusionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\MensajesController;
@@ -12,3 +13,4 @@ Route::view('/register','auth.register') -> name('register');
 Route::resource('mensajes',MensajesController::class) -> middleware('auth');
 Route::view('/home','home') -> name('HOME') -> middleware('auth');    
 
+Route::get('difusion/enviarSaludo/{nombre}/{direccion}', [difusionController::class, 'Bienvenida']);

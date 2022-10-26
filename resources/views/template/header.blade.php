@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     
-    <a class="navbar-brand" href="">Fundación Animales</a>
+    <a class="navbar-brand" href="">Fundación</a>
     
     <button type="button" class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

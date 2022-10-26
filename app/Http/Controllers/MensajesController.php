@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helper\enviarMail;
 use App\Models\Mensaje;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class MensajesController extends Controller
 
     public function store(Request $request){
         $mensaje=new Mensaje;
-        $mensaje->create(request()->all());
+        $mensaje->create(request()->all());       
+        enviarMail::saludo(request()->all());
         return redirect()->back();
     }
 
