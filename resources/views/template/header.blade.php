@@ -22,7 +22,13 @@
                 </form>          
                 <li class="nav-link">
                     <a class="nav-link" href="{{route("mensajes.index")}}" tabindex="-1" aria-disabled="true">Mensajes</a>
-                </li>      
+                </li> 
+                <li class="nav-link">
+                    <a class="nav-link" href="{{route("articulos.index")}}" tabindex="-1" aria-disabled="true">Articulos</a>
+                </li>    
+                <li class="nav-link">
+                    <a class="nav-link" href='#' tabindex="0" aria-disabled="">{{auth()->user()->nik}}</a>
+                </li>
             @else
                 <li class="nav-item">
                     <a class="nav-link" href="{{route("login")}}" tabindex="-1" aria-disabled="true">Ingresar</a>

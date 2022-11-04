@@ -30,6 +30,11 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+    // Declaración de alias de la clase que nos permite manejar la libreria
+    // de excels
+
+    'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -195,6 +200,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
+
+        Maatwebsite\Excel\ExcelServiceProvider::class,
     ],
 
     /*
